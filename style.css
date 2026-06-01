@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    background: #0a0a0f;
+    color: white;
+    overflow: hidden;
+
+}
+
+body {
+    background-image: url("purple-space-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Navbar */
+/* Glass navbar */
+.glass-nav {
+    background: rgba(10, 10, 20, 0.6);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+/* Brand accent */
+.accent {
+    color: #a855f7;
+}
+
+/* Nav links */
+.nav-glow {
+    color: #cfcfcf !important;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.nav-glow:hover {
+    color: #a855f7 !important;
+    transform: translateY(-2px);
+}
+
+/* Underline animation */
+.nav-glow::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: #a855f7;
+    transition: 0.3s;
+}
+
+.nav-glow:hover::after {
+    width: 100%;
+}
+
+/* Active click feel */
+.nav-glow:active {
+    transform: scale(0.95);
+}
+
+.main {
+    font-weight: 800;
+}
+
+h1 {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+
+p {
+    line-height: 1.7;
+    color: #cfcfcf;
+    font-size: 1.25rem;
+}
+
+
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 40px;
+}
+
+/* Colors */
+.purple {
+    color: #a855f7;
+}
+
+
+.btn-purple {
+
+    background: #2b0666;
+    color: white;
+    border: none;
+}
+
+.btn-purple:hover {
+    background: #17002d;
+}
+
+/* Cards */
+.card-glass {
+    background: #140021;
+    border: 1px solid #6d28d9;
+    border-radius: 5%;
+    color: white;
+}
+.card-glass img {
+    height: 160px;
+    object-fit: cover;
+}
+.card-dark {
+    background: #140021;
+    border-radius: 5%;
+    color: white;
+}
+
+/* Image */
+.hero-img {
+    margin-top: 100px;
+    width: 850px;
+    height: 850px;
+
+}
+
+/* Social icons */
+.social a {
+    color: aliceblue;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(168, 85, 247, 0.3);
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    color: #2b0666;
+    background: #a855f7;
+    transform: translateY(-3px);
+}
+
+.social i {
+    font-size: 18px;
+}
