@@ -1,11 +1,8 @@
 body {
     margin: 0;
-    background: #0a0a0f;
     color: white;
-    overflow: hidden;
-
+    overflow-x: hidden;
 }
-
 body {
     background-image: url("purple-space-background.jpg");
     background-size: cover;
@@ -79,13 +76,14 @@ p {
     font-size: 1.25rem;
 }
 
-
 section {
-    height: 100vh;
+    min-height: 100vh;
+    padding: 100px 20px;
+}
+#main {
+    min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 80px 40px;
 }
 
 /* Colors */
@@ -107,13 +105,12 @@ section {
 
 /* Cards */
 .card-glass {
-    background: #140021;
-    border: 1px solid #6d28d9;
-    border-radius: 5%;
-    color: white;
+    height: 100%;
 }
+
 .card-glass img {
-    height: 160px;
+    width: 100%;
+    height: 180px;
     object-fit: cover;
 }
 .card-dark {
@@ -124,10 +121,16 @@ section {
 
 /* Image */
 .hero-img {
-    margin-top: 100px;
-    width: 850px;
-    height: 850px;
-
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    margin-top: 30px;
+}
+.hero-img {
+    max-width: 380px;
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 20px rgba(168,85,247,.4));
 }
 
 /* Social icons */
@@ -152,4 +155,46 @@ section {
 
 .social i {
     font-size: 18px;
+}
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #main {
+        text-align: center;
+    }
+
+    .hero-img {
+        max-width: 250px;
+        margin-top: 20px;
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .navbar-collapse {
+        background: rgba(20, 0, 33, 0.95);
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    section {
+        padding: 100px 15px;
+    }
+
+    .card-glass {
+        max-width: 100%;
+    }
 }
